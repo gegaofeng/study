@@ -10,7 +10,7 @@ public class demo01 {
     public static void main(String[] args){
         Person person=new Person();
         person.setAge(2);
-        person.setaaa(222);
+        person.setAge(222);
         person.show();
     }
 }

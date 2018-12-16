@@ -14,13 +14,30 @@ public class MethodOverload {
         System.out.println(sum(1, 2, 3));
     }
 
+    /**
+     *
+     * @param a
+     * @param b
+     * @return
+     */
     @Contract(pure = true)
     public static int sum(int a, int b) {
         return a + b;
     }
 
+    /**
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @return
+     */
     @Contract(pure = true)
     public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static int sum2(int a, int b, int c) {
         return a + b + c;
     }
 }

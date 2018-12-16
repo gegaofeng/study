@@ -7,18 +7,44 @@ package day06;
  * @create: 2018-12-15 10:28
  */
 public class Person {
-    String name;
+    private String name;
     private int age;
-    public void show(){
-        System.out.println("我叫"+name+",今年"+age+"岁。");
+    private boolean male;
+
+    public Person() {
     }
-    public void setAge(int num){
-        age=num;
+
+    public Person(String name, int age, boolean male) {
+        this.name = name;
+        this.age = age;
+        this.male = male;
     }
-    public int getAge(){
+
+    public boolean isMale() {
+        return male;
+    }
+
+    public void setMale(boolean male) {
+        this.male = male;
+    }
+
+    public void show() {
+        System.out.println("我叫" + name + ",今年" + age + "岁。");
+    }
+
+    public int getAge() {
         return age;
     }
-    public void setaaa(int num){
-        age=num;
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
