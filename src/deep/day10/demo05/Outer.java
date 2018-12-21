@@ -10,7 +10,7 @@ public class Outer {
     private int num = 10;
 
     public void method() {
-        //增加变量生命周期，方法结束不会立马消失
+        //final修饰后，该变量编译时直接编译为常量
         final int num2 = 20;
         class Inner {
             public void show() {
