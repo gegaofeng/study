@@ -10,6 +10,7 @@ package deep.day11.demo02;
 public class Demo01 {
     public static void main(String[] args) {
         Student s = new Student();
+        System.out.println("studeng=" + s);
         System.out.println(s.hashCode());
         System.out.println(s.getClass().getName());
         System.out.println(s.toString());
