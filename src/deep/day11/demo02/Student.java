@@ -18,6 +18,9 @@ public class Student {
 //                '}';
 //    }
 
+    /**
+     * @return
+     */
     public String getName() {
         return name;
     }
@@ -30,6 +33,9 @@ public class Student {
         return age;
     }
 
+    /**
+     * @param age
+     */
     public void setAge(int age) {
         this.age = age;
     }
